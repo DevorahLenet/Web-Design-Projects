@@ -1,0 +1,480 @@
+/*Universal styles for entire page*/
+html {
+    font-family: 'Lato', sans-serif;
+    /* background-color: rgb(83, 221, 231); */
+}
+
+/*Styles for the header and horizontal navigation*/
+body {
+    margin: 0px
+}
+
+.header_top{
+    /* margin-top: 10px; */
+    left: 0px;
+    right: 0px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black;
+    font-size: 18px;              
+}
+.title{
+    font-size: 80px;
+    /* font-family: 'Fredericka the Great', cursive; */
+}
+
+#slogan{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+h1 {
+    /*Changed default styles of h1 to work in my design. Found default styles in "inspect" in browser.*/
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+.nav {
+    width: inherit;
+    left: 0px;
+    right: 0px;
+    height: 25px;
+    background-color: lightcoral;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+ul.nav {
+    /*Takes the bullets, etc. off the list*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav li {
+    /*Makes the list horizontal*/
+    float: right;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+a {
+    /*Takes the underlines off the link*/
+    text-decoration: none;
+    color: rgb(8, 8, 0);
+}
+
+a:hover {
+    color: #fefefe;
+}
+
+.page_container {
+    margin-top: 65px;
+    margin-left: 100px;
+}
+
+.process_account_container{
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+#home_page_container{
+    text-align: center;
+    margin-left: 0px;
+}
+
+.home_page_heading {
+    font-size: 50px;
+}
+
+.regular_text {
+    font-size: 25px;
+}
+
+.regular_text_sml {
+    font-size: 16px;
+    color: black;
+}
+
+.select_intro {    
+    /*changed default margins of h4 to fit design. see note on h1*/
+    margin-block-start: .1em;
+}
+
+h4 {
+    /*changed default margins of h4 to fit design. see note on h1*/
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    color:rgb(6, 60, 82);
+}
+
+.required_hint {
+    margin-block-start: 0em;
+    font-size: small;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    font-style: italic;
+}
+
+.form_header {    
+    font-weight: bold;
+    color:black;
+    margin-left: 20px;
+}
+
+#filter_menu {
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+
+/* filter menu for contact page */
+#choices {
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+
+#choose_btn {
+    margin-right: 1em;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: rgb(83, 221, 231);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+}
+
+#signin_btn {
+    float: right;
+    margin-top: 2em;
+    margin-right: 1em;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+    background-color: rgb(83, 221, 231);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+}
+
+#home_to_jobs_page_btn{ /*also in class .profile_button*/
+    margin-top:3em;
+    float: none;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+#home_to_create_account_btn{/*also in class .profile_button*/
+    float: none;
+    margin: auto;
+}
+
+#howitworks_to_create_account_btn{
+    float: none;
+}
+
+#form_btn{
+    margin-right: 1em;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: rgb(83, 221, 231);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+}
+
+#footer {
+    margin-top: 3em;
+    padding: 2em;
+    background-color: rgb(83, 221, 231);
+}
+
+/*Styles for the profile page */
+#account_container{
+    height: 600px;
+    width: 100%;
+    background-color: white;
+}
+
+.profile_button{
+    width:170px;
+    height:30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(83, 221, 231);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 5px; */
+    color:black;
+}
+
+#side_nav{
+    float: left;
+    height: inherit;
+    width: 170px;
+    background-color:white;
+
+}
+
+#profile_container{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 20px;
+    padding-left: 30px;
+    color: rgb(83, 221, 231);
+    margin-left: 180px;
+    margin-right: 0px;
+    width: 80%;
+    height: inherit;
+    border-radius: 7px;
+}
+
+#sign_out_page {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(83, 221, 231);
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-left: 180px;
+    margin-right:0px;
+    width: 80%;
+    height: inherit;
+    border-radius: 7px;
+    display: none;
+}
+
+/*Job Styles*/
+#jobs_container {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(83, 221, 231);
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-left: 180px;
+    margin-right:0px;
+    width: 80%;
+    height: inherit;
+    border-radius: 7px;
+    display: none;
+}
+
+#request_page {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(83, 221, 231);
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-left: 180px;
+    margin-right:0px;
+    width: 80%;
+    height: inherit;
+    display: none;
+    border-radius: 7px;
+    display: none;
+
+}
+
+#error_msg_container {
+    color: red;
+}
+
+.profile_title{
+    color:black;
+    font-size: 80px;
+}
+
+
+#job_frame{
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    width: 45%;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 5px; */
+}
+
+#requestor_frame{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 45%;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(83, 221, 231);
+    font-weight: bold;
+    color: black;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 5px; */
+}
+
+.job_info_header{
+    color: rgb(83, 221, 231);
+}
+
+#job_title{
+    font-size: 30px;
+}
+
+#on_job_form{
+    float: right;
+}
+
+/*************************************/
+
+/*Styles for modal pop up sign in*/
+
+/* Full-width input fields */
+.modal_input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .modal_title {
+      color: lightcoral;
+      text-align: center;
+  }
+  
+  /* Set a style for all buttons */
+  .modal_btn {
+    background-color: rgb(83, 221, 231);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .modal_btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  #cancel_btn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: lightcoral;
+  }
+  
+  .container {
+    padding: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+  
+    .cancelbtn {
+       width: 100%;
+    }
+  }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/contactcss.css"> <!--referencing my stylesheet-->
+
+        <title>Devorah Sachs M3 Web Form</title>
+
+        <style>
+            .header_top{
+                background-image: url("images/AdobeStock_288222154.jpeg");
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/contactjs.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="header_top">
+                <h1>Contact Us</h1>
+            </div> 
+            <div class="nav">
+                <!--a link back to the portal page and some dead links for experimentation purposes-->
+                <ul class="nav">
+                    <li><a href="https://cdlwebsysdev.esc-atsystems.net/devorah_sachs948/M1/M1Portal.html">Back to Portal</a></li>
+                    <!--<li><a href="#">link 1</a></li> 
+                    <li><a href="#">link 2</a></li> 
+                    <li><a href="#">link 3</a></li> 
+                    <li><a href="#">link 4</a></li> 
+                    <li><a href="#">link 5</a></li>-->
+                </ul>
+            </div>           
+            
+        </header>
+
+        <article>
+            <h2 class="form_header">Contact Us:</h2>
+
+            <form>
+                <p class="select_intro">What would you like to speak with us about?</p>
+                <select name="choices" id="choices" onchange="displayProperForm()">
+                    <option value="none">Select</option>
+                    <option value="help">Get Help</option>
+                    <option value="feedback">Leave Feedback</option>
+                  </select>
+
+            </form>
+
+            <div id="feedback">
+                <form action="https://cdlwebsysdev.esc-atsystems.net/WSD/form-to-email.php" method="post">
+                   <h2 class="form_header">We Appreciate Your Feedback!</h2>
+                   <p class="required_hint">* indicates required field</p><br/>
+        
+                    <!--hidden fields-->
+                    <input type="hidden" name="ToAddress" value="dvsachs2@gmail.com"/>
+                    <input type="hidden" name="CCAddress" value="todd.wolfe@esc.edu"/>
+                    <input type="hidden" name="Subject" value="WSD: Assignment 3.0 - Web Form for Devorah Sachs"/>
+        
+                    <!--visible fields-->
+                    <label>
+                        *Name: <input class="longer" id="name_feedback" type="text" name="name" placeholder="Your Name"/>
+                    </label><br/><br/>
+                    <!--break-->
+                    <label>
+                        *Email: <input type="text" id="email_feedback" name="FromAddress"/>
+                    </label><br/><br/>
+                    <!--break-->
+        
+                    <label>
+                       Street Address: <input class="longer" type="text" name="street"/>
+                    </label>
+                    <label>
+                        City: <input type="text" name="city"/>
+                    </label><br/><br/>
+                    <!--break-->
+                    <label>
+                        State: <input type="text" name="state"/>
+                    </label>
+                    <label>
+                        Country: <input type="text" name="country"/>
+                    </label>
+                    <label>
+                        Postal Code: <input type="text" name="zipcode"/>
+                    </label><br/><br/>
+                    <!--break-->
+        
+                    <h4>Please rate your experience on our website...</h4>
+                    <input type="radio" id="five" name="rating" value="5"/>
+                    <label for="five">5 - Fantastic! I'm certainly coming back</label><br/>
+                    <input type="radio" id="four" name="rating" value="4"/>
+                    <label for="four">4 - Good, very helpful</label><br/>
+                    <input type="radio" id="three" name="rating" value="3"/>
+                    <label for="three">3 - Fine</label><br/>
+                    <input type="radio" id="two" name="rating" value="2"/>
+                    <label for="two">2 - Ok, not great</label><br/>
+                    <input type="radio" id="one" name="rating" value="1"/>
+                    <label for="one">1 - Seriously needs improvement</label><br/><br/>
+                    <!--break-->
+                    
+                    <h4 id="comments_feedback_header">...*and tell us why:</h4>
+                    <textarea rows="7" cols="80" id="comments_feedback" name="comments" placeholder="Your comments here"></textarea><br/><br/>
+                    <!--break-->
+                    
+                    <input type="submit" class="btn" value="submit"/>
+                    <input type="reset" class="btn" value="reset"/>
+                </form>
+            </div>
+
+            <div id="help">
+                <form action="https://cdlwebsysdev.esc-atsystems.net/WSD/form-to-email.php" method="post">
+                    <h2 class="form_header">How can we help you?</h2>
+                    <p class="required_hint">* indicates required field</p><br/>
+         
+                     <!--hidden fields-->
+                     <input type="hidden" name="ToAddress" value="dvsachs2@gmail.com"/>
+                     <input type="hidden" name="CCAddress" value="todd.wolfe@esc.edu"/>
+                     <input type="hidden" name="Subject" value="WSD: Assignment 3.0 - Web Form for Devorah Sachs"/>
+         
+                     <!--visible fields-->
+                     <label>
+                         *Name: <input id="name_help" class="longer" type="text" name="name" placeholder="Your Name"/>
+                     </label><br/><br/>
+                     <!--break-->
+                     <label>
+                         *Email: <input type="text" id="email_help" name="FromAddress"/>
+                     </label><br/><br/>
+                     <!--break-->
+                     <label id="phone_label">Phone: </label>
+                     <input type="text" id="phone_number" name="phone"/>
+                     <br/><br/>
+                     <!--break-->
+                     
+         
+                     <label>
+                        Street Address: <input class="longer" type="text" name="street"/>
+                     </label>
+                     <label>
+                         City: <input type="text" name="city"/>
+                     </label><br/><br/>
+                     <!--break-->
+                     <label>
+                         State: <input type="text" name="state"/>
+                     </label>
+                     <label>
+                         Country: <input type="text" name="country"/>
+                     </label>
+                     <label>
+                         Postal Code: <input type="text" name="zipcode"/>
+                     </label><br/><br/>
+                     <!--break-->
+         
+                     <h4 id="checkbox_header">*Preferred Contact Method:</h4>
+                     <input type="checkbox" id="phone" name="contactMethod" value="phone" onchange="phoneRequired()"/>
+                     <label for="phone">telephone</label><br/>
+                     <input type="checkbox" id="email" name="contactMethod" value="email"/>
+                     <label for="four">email</label><br/>
+                     <input type="checkbox" id="both" name="contactMethod" value="phone and email" onchange="phoneRequired()"/>
+                     <label for="three">both are acceptable</label><br/>
+                     <!--break-->
+                     
+                     <h4 id="comments_help_header">*Please explain your question:</h4>
+                     <textarea rows="7" cols="80" id="comments_help" name="comments" placeholder="Your question here"></textarea><br/><br/>
+                     <!--break-->
+                     
+                     <input type="submit" class="btn" value="submit"/>
+                     <input type="reset" class="btn" value="reset"/>
+                 </form>
+            </div>
+        </article>
+
+        <!-- <footer id="footer">
+            <p>&copy Devorah Sachs, SUNY Empire State College 2022</p>
+        </footer> -->
+    </body>
+</html>

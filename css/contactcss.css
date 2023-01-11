@@ -1,0 +1,129 @@
+/*Universal styles for entire page*/
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Styles for the header and horizontal navigation*/
+/*Note: why are these divs not starting at the top and left of the page? 
+  why is there still a small white margin? Need to figure out.*/
+body {
+    margin: 0px;
+}
+
+.header_top{
+    /*top: inherit;*/
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-color: rgb(6, 3, 41);
+    background-image: url("images/AdobeStock_288222154.jpeg");
+    height: 175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(238, 238, 216);
+    font-size: 55px;              
+}
+
+h1 {
+    /*Changed default styles of h1 to work in my design. Found default styles in "inspect" in browser.*/
+    margin: 5px;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+.nav {
+    width: inherit;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    height: 25px;
+    background-color:rgb(6, 60, 82);
+    padding: 5px;
+}
+
+ul.nav {
+    /*Takes the bullets, etc. off the list*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav li {
+    /*Makes the list horizontal*/
+    float: right;
+    padding-right: 50px;
+    font-size: 25px;
+}
+
+a {
+    /*Takes the underlines off the link*/
+    text-decoration: none;
+    color: rgb(238, 238, 216);
+}
+
+a:hover {
+    color:ivory;
+}
+
+article {
+    margin-top: 65px;
+    margin-left: 110px;
+}
+
+h2, p{
+    color:rgb(6, 3, 41);
+}
+
+.select_intro {    
+    /*changed default margins of h4 to fit design. see note on h1*/
+    margin-block-start: .1em;
+}
+
+.form_header {    
+    /*changed default margins to fit design. see note on h1*/
+    color:rgb(6, 60, 82);
+    margin-block-end: 0em;
+}
+
+h4 {
+    /*changed default margins of h4 to fit design. see note on h1*/
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    color:rgb(6, 60, 82);
+}
+
+.required_hint {
+    margin-block-start: 0em;
+    font-size: small;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    font-style: italic;
+}
+
+.btn {
+    background-color:rgb(6, 60, 82);
+    border: none;
+    width: 100px;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#feedback {
+    display: none;
+}
+
+#help {
+    display: none;
+}

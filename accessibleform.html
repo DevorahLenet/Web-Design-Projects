@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/accessibleformcss.css">
+
+        <title>Devorah Sachs Accessible Feedback Form</title>
+
+    </head>
+
+    <body>
+        <main>
+            <div id="container">
+                <form action="https://cdlwebsysdev.esc-atsystems.net/WSD/form-to-email.php" method="post">
+                    <h1>We Appreciate Your Feedback!</h1><br/>
+        
+                    <!--hidden fields-->
+                    <input type="hidden" name="ToAddress" value="dvsachs2@gmail.com"/>
+                    <input type="hidden" name="CCAddress" value=""/>
+                    <input type="hidden" name="Subject" value="WSD: Assignment 2.2 - Web Form for Devorah Sachs"/>
+        
+                    <!--visible fields-->
+                    <label>
+                        Name: <input class="longer" type="text" name="name" placeholder="Your Name" autocomplete="name"/>
+                    </label>
+                    <label>
+                        Email: <input type="text" name="FromAddress" autocomplete="email"/>
+                    </label><br/><br/>
+                    <!--break-->
+        
+                    <label>
+                       Street Address: <input class="longer" type="text" name="street" autocomplete="address-line1"/>
+                    </label>
+                    <label>
+                        City: <input type="text" name="city" autocomplete="address-level2"/>
+                    </label><br/><br/>
+                    <!--break-->
+                    <label>
+                        State: <input type="text" name="state" autocomplete="address-level1"/>
+                    </label>
+                    <label>
+                        Country: <input type="text" name="country" autocomplete="country-name"/>
+                    </label>
+                    <label>
+                        Postal Code: <input type="text" name="zipcode" autocomplete="postal-code"/>
+                    </label><br/><br/>
+                    <!--break-->
+        
+                    <fieldset id="rating_options">
+                        <legend>
+                            <h2>Please rate your experience on our website...</h2>
+                        </legend>
+                        <input type="radio" id="five" name="rating" value="5"/>
+                        <label for="five">5 - Fantastic! I'm certainly coming back</label><br/>
+                        <input type="radio" id="four" name="rating" value="4"/>
+                        <label for="four">4 - Good, very helpful</label><br/>
+                        <input type="radio" id="three" name="rating" value="3"/>
+                        <label for="three">3 - Fine</label><br/>
+                        <input type="radio" id="two" name="rating" value="2"/>
+                        <label for="two">2 - Ok, not great</label><br/>
+                        <input type="radio" id="one" name="rating" value="1"/>
+                        <label for="one">1 - Seriously needs improvement</label><br/><br/>
+                        <!--break-->
+                    </fieldset>
+                    
+                    <label for="feedback"><b>...and tell us why:</b></label><br/><br/>
+                    <textarea rows="7" cols="80" id="feedback" name="feedback" placeholder="Please write your comments here"></textarea>
+                    <br/><br/>
+                    <!--break-->
+                    
+                    <input type="submit" value="submit"/>
+                    <input type="reset" value="reset"/>
+                </form>
+            </div>
+        </main>
+        
+    </body>
+</html>

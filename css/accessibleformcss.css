@@ -1,0 +1,41 @@
+/*CSS for Module 4 Assignment 1 (Acessible Form)*/
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: aliceblue;
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    padding: 35px;
+    margin: auto;
+    width: 60%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+input[type=text] {
+    height: 22px;
+    margin-right: 1em;
+}
+
+input[type=text], textarea {
+    border: 1px solid lightsteelblue;
+    border-radius: 3px;
+}
+
+#rating_options {
+    border: none;
+}
+
+textarea:hover, input[type=text]:hover {
+    box-shadow: 2px 2px 7px lightsteelblue;
+}
+
+.longer {
+    width: 20em;
+}
